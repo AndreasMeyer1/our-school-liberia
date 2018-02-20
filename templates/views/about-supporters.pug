@@ -24,7 +24,8 @@ block content
 		if individuals.length
 			ul.supporters
 				each supporterIndividual in individuals
-					li.supporter-individual
-						#{supporterIndividual.name.first} #{supporterIndividual.name.last}
+					if supporterIndividual.published
+						li.supporter-individual #{supporterIndividual.name}
+							p #{supporterIndividual.origin}
 		else
 			h3.text-muted There are no Supporter Individuals.

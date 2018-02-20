@@ -18,7 +18,7 @@ SupporterIndividual.add({
 	name: { type: String, required: true },
 	key: { type: Types.Key, noedit: true },
 	email: { type: Types.Email },
-	message: { type: Types.Markdown},
+	origin: { type: String},
 	donationAmount: {type:Number},
 	paymentCompleted: { type: Boolean},
 	donatedOn: { type: Date },
